@@ -6,3 +6,4 @@ __pycache__/
 /dmg/build
 /dmg/dist
 *.db
+*.mp4
