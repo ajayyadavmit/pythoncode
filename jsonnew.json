@@ -1,0 +1,37 @@
+{
+    "name": "ajay",
+    "address": "kathmandu",
+    "fruits": [
+        "mango",
+        "orango",
+        56,
+        "papaya",
+        89,
+        99,
+        123
+    ],
+    "marks": [
+        34,
+        55,
+        12,
+        23,
+        24,
+        56
+    ],
+    "course": {
+        "1stSemester": [
+            "leadership",
+            "diversity",
+            "AcademicWriting",
+            "Policy"
+        ],
+        "assessmentTypes": {
+            "leadership": "Formative",
+            "AcademicWriting": [
+                45,
+                55,
+                89
+            ]
+        }
+    }
+}

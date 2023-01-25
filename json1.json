@@ -1,0 +1,41 @@
+// json should be used with DOUBLE QUOTATION 
+use of Backticks in the CONSOLE window of the Browser ` `
+myjson = `{
+    "name": "ajay",
+    "marks" : 54
+}`
+
+
+{
+    "name": "ajay",
+    "marks" : 54,
+    "isadmin" : false,
+    "license" : null,
+    "shopItems" : [ "food", "clothes","soap"],
+    "myobj" : {
+        "name" : "nested",
+        "marksObject" : 55,
+        "shopItems2"  : ["food","clothes",{"a"  : true }]
+    }
+
+}
+
+// write json and execute in the browser Console Tab. 
+
+// JSON.parse(myjson)
+
+
+parsed = JSON.parse(myjson)  // use of json function to parse the object 
+
+parsed['isadmin']
+parsed["license"]
+parsed["myobj"]["name"]
+parsed["shopItems"][1]
+
+
+json Array []   >> accessed by Number 
+
+json Object {} >> accessed by Dictionary values 
+Json can be nested several levels by the Array [] , dictionary objects {} levels. 
+
+

@@ -1,0 +1,8 @@
+##  PYTHON PROJECT ###
+
+*.pyc
+__pycache__/
+/dmg/venv
+/dmg/build
+/dmg/dist
+*.db
