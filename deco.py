@@ -37,7 +37,6 @@ print([  {i: i + 22} for i in l   ])
 
 print(list(map(lambda x: x + 2, l)))
 
-
 def square(x):
     return x*x
 
@@ -86,11 +85,9 @@ def two():
 # o1 = decoratorfunc(one)
 # o1()
 
-
 print(type(one))
 
 one()
-
 
 def twoDecorator(f1):
     def wrapper():
@@ -103,11 +100,62 @@ def kind():
     print("kind value KIND")
     return "kind"
 
-
 kind()
 
+print("#" *33)
+
+# def parent(f1):
+#     print("inside Parent Function")
+#     def child(*args):
+#         return f1(*args)
+#         print("inside Decorator of Parent")
+
+#     return child
+
+# @parent
+# def try1(a):
+#     print(f"Good Life {a} ")
 
 
+# try1("d dssdf sdfdsf f")
 
+# @parent
+# def addtwo(a,b,c):
+#     return a+b+c
+# print("E"*33)
+# print(addtwo(5,4,3))
 
+# This does RETURN of the Function Values 
+
+from functools import wraps
+
+def Padd(f1):
+    print("dflf")
+    @wraps(f1)
+    def child(*args):
+        ''' this is child '''
+        return f1(*args)
+        print("inside child func")
+    print("inside decorator")
+    return child
+
+@Padd
+def one(a,b):
+    ''' one doc one one '''
+    print("inside oNE ONE ")
+    return a + b
+    
+print(one(5,6))
+
+def queen():
+    ''' qUEEN QUEEN QUEEN'''
+    print("  455555   ")
+
+print(queen.__doc__)
+print(queen.__name__)
+
+print(one.__name__)
+print(one.__doc__)
+
+## function name , Funtion Doucment are there ... 
 
