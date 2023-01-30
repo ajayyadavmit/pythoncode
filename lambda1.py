@@ -207,3 +207,51 @@ print(math.ceil(5.6))
 # Reduce (functools) will do the CUMULATIVE Summation Factors. 
 # l = [4,5,8,9,11,13]  4+5 = 9 + 8 = 17 + 9 = 23 
 
+# lambda function is anonymous fucntion 
+# lambda argument :  expression  >> expression is the pythion statements first.. 
+# function without Name 
+# lamba a : a + 10 >> a + 10 is the python expressions >> no return keyword >> Auto return value in the function 
+
+# how to call the lambad function >> thorugh ALIAS function name 
+
+# lambda syntax::  lambda arguments : expression  # here expression is the python expresson statements, expression can be of multiple types, Return is automatically there for the Expression.  Arguments can be of "n" numbers for the Passing data value's. 
+
+''''
+An expression is a combination of operators and operands that is interpreted to produce some other value. In any programming language, an expression is evaluated as per the precedence of its operators. So that if there is more than one operator in an expression, their precedence decides which operation will be performed first. 
+
+Expression is combination of operator and operands in the statment. They are supposed to produce some values. 
+Operators are of several types in python. 
+constant expression, 
+arithmetic expression .. 
+a + b , a - b , a * b ,  a / b ,  a //b (QUotient)  , a % b (Modulus ),  a ** b  ( Exponential part)
+
+Relational Expression >> always Evaluates the Value to be of TRUE / FALSE part in expression ( 1 / 0 ) form. 
+a > b 
+a >=  b
+a < b
+a <= b 
+Boolean expression ( Gives value in form of True / False ) 1 / 0 form meanings. 
+
+Logical expression ( and or not )  To form the LOgic Buildings.  >> 
+Multiple operators in the expression ( Precedence of the operators values )
+'''
+
+l2 = lambda x, y : ("addition " ,x + y, x - y, x //y, x /y, x *y, x ** y, x % y ,"Modululs")
+
+print(l2(4,5))
+
+
+# Loops are used to exeucte for BLOCK OF CODE in a REPETITIVE form. 
+# while <conditions >  >> Condition is always evaluated in BOOLEAN Format ( true / false ) format. 
+
+while 0:
+    print("zero")
+
+while None: # 0  and NONE are the same Evaluated as FALSE conditional expressions. 
+    print("NONE")
+
+
+# while 1: 
+#     print("TRUE")
+
+

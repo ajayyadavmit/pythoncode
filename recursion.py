@@ -58,3 +58,22 @@ print(fibonacci(a))
 
 # recursion BASE COnditno should be there some Value as the Base Values. .. 
 
+# Recursive Funtion are function which are executed by their call to itselfs values.. 
+
+import sys 
+
+print(sys.getrecursionlimit())  # Shows the Recursive Limit calling of the funtions .. in SYS module sys.getrecursionlimit()
+
+sys.setrecursionlimit(300)
+
+counter = 0
+def demo():
+    global counter
+    counter += 1
+    print("hellos", "counter", counter)
+    demo()
+
+# demo()  # RecursionError: maximum recursion depth exceeded while calling a Python object
+# # Python has Maximum Recursive function limits depth of 1000.  
+
+# Recursive function can call itself functions. 

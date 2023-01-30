@@ -45,3 +45,27 @@ print(value)
 
 # TUple is converted to the ARRAY Values in the JSON. 
 
+'''
+List >> flexible type of data type .. 
+
+Python has array module >> ordered collection of data types.. Fixed Data Type in the python programming type. 
+
+## data science for using the Numpy Array >> C Bindings .. Performance Fast .. for python .. 
+
+Python Bridge with C language..  
+Performance  like C lang. 
+
+Flexibity like Python Language.. 
+
+list vs String ... 
+
+List are Mutable.. 
+String are NOT Mutable.. Not Changeable types... 
+
+'''
+
+s = "one"
+
+a = s.title()
+
+print(s)

@@ -117,18 +117,50 @@ import time
 #     for i in l: 
 #         f.write(str(i))
 
-t1 = time.time()
-l =  (i  for i in range(10000000))
-t2 = time.time()
-print("time value for List " , (t2 - t1)*1000 )
-for i in range(11):
-    print(next(l))
+# t1 = time.time()
+# l =  (i  for i in range(10000000))
+# t2 = time.time()
+# print("time value for List " , (t2 - t1)*1000 )
+# for i in range(11):
+#     print(next(l))
 
-for i in range(11):
-    print(next(l))
+# yield keyword for the Generators 
 
-for i in range(11):
-    print(next(l))
+print("he \t\t lsdfsd\n f2323lo \n Sanepa \n kathm\bandu")
 
-for i in range(11):
-    print(next(l))
+# placeholder {} with Curly braces in Python for String Print Function 
+
+n1 = "ajay"; n2 = "aman" ; n3 = "kavita"
+print(f" the members name are {n1} and {n2} and {n3}")  # place holder with {} curly braces and f"" string vaues"
+
+print("the name are"+n1+"next member" + n2 + "last " + n3)  # UGLY and Tedious Syntax Types.. rather than use the placeholder f strings. 
+
+
+# y1 = input("Enter Value for a and b")
+
+# a,b = y1.split()
+# print(a,b)
+# y1.split()  # Split function will split the value of functions. 
+
+from functools import wraps 
+
+def outer(f1):
+    ''' ooopppppppppp ppp sssss '''
+    # @wraps(f1)
+    def wrap1(*msg):
+        ''' wwwwwwwwwwwww www '''
+        return f1(*msg)
+        print("inside the wrap")
+    return wrap1
+
+@outer
+def bottle(msg, v2):
+    '''  bottotle botttte '''
+    print(f" the value is {msg} and {v2}")
+    return "dcorator"
+
+bottle('dff', 3455)
+
+print(bottle.__doc__)
+print(bottle.__name__)
+
