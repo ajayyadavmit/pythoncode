@@ -1,3 +1,5 @@
+# import pdb Module 
+
 # print(locals())
 
 # print(globals())
@@ -14,6 +16,7 @@
 # print(c)
 
 '''
+Debuggin >>  De + Bug  ( Dig  BUG find out )
 Debugging is the PROCESS of finding BUGS or ERRORS in the program CODE. 
 
 BreakPoint allows you to STOP the PROGRAM at certain POINT so you can DEBUG your Code well.  
@@ -29,6 +32,9 @@ Area Types:
 Variables ( Local / Global ) options >> Give the "Variable Definitions" & its Values. 
 WATCH ( you can see the SPECIFIC Value of Variable)
 BREAKPOINTS  ( you can call breakpoints when EXCEPTIONS are RAISED or occured in program)
+
+import pdb   # python Debugging Module 
+Module contains Python Class and Function related by the Developer. 
 
 '''
 
@@ -121,18 +127,23 @@ LOCAL & GLOBAL Variables >> they are SUPPOSED to function placeholder for Values
 
 '''
 
+import pdb
+
+
 g1 = 5 
+pdb.set_trace()
 l1 = 10
 def g11():
     global g1 
     g1 = 15
     l1 = 1111
+    a = input("Enter a value")
     print(g1,l1)
 
 # print(g11)
 
-if __name__ == "__main__":
-    g11()
+
+g11()
 print(g1)
 
 
@@ -141,6 +152,20 @@ python has several INBUILD Variable NAME's That will help to DEFINE the variable
 
 __name__
 __file__
+
+
+'''
+
+'''
+pdb.settrace()  >> to pause the command for debug with PDB module 
+
+commands types: 
+
+l  >>  line no of code shows 
+n  >> next line 
+
+c >> continue execution 
+q  >> quit the program 
 
 
 '''
